@@ -5,9 +5,13 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
             "are": "arrrrrr matey",
             "brb": "be right back",
             "lol": "laughing out loud",
+            "optional": "why opt?",
             "ty": "thank you",
         };
-        let reducer = (acc, val) => acc.replace(val, DICTIONARY[val]);
+        const re = new RegExp()
+        let reducer = (acc, val) => (
+            acc.replace(new RegExp(` ${val} `, 'gi'), ` ${DICTIONARY[val]} `)
+        );
         let paragraphs = document.getElementsByTagName("p");
         for (p of paragraphs) {
             let str = p.innerText;
