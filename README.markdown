@@ -9,6 +9,16 @@ the acronyms. It's basically Mad Libs!
 But also, I never wrote a Chrome Extension and I wanted to. And I don't write
 Javascript, so any exercise to do so is okay by me. :)
 
+## Examples
+
+### Reddit
+![Reddit before](images/reddit-lol.before.png)
+![Reddit after](images/reddit-lol.after.png)
+
+### Twitter
+![Twitter before](images/twitter.01.before.png)
+![Twitter after](images/twitter.01.after.png)
+
 ## Dictionary Definitions
 You can see the definitions of acronyms in [content.js](content.js).
 
